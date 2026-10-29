@@ -253,6 +253,12 @@ function mostrarMision({ id, destino, velocidad, distancia, duracion }) {
     localStorage.setItem("misiones", JSON.stringify(misionesLanzadas));
 
     historialMisiones.remove();
+    Toastify({
+        text: "Misión eliminada ❌",
+        duration: 2000,
+        className: "info",
+    }).showToast();
+
   });
 }
 
