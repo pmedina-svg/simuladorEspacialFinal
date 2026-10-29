@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-input,
-select,
-textarea {
-    font-size: 16px;
-}
 
 /*body*/
 html {
@@ -505,10 +500,10 @@ ul.misionesLanzadas li {
 /* Modal lanzamiento */
 
 .modalMision,
-.modalSesion, 
+.modalSesion,
 .modalConfirmacion,
 .modalCuentaRegresiva,
-.modalBienvenida{
+.modalBienvenida {
     position: fixed;
     top: 0;
     left: 0;
@@ -610,7 +605,8 @@ ul.misionesLanzadas li {
     text-align: center;
 }
 
-.modalConfirmacion .modal button:hover, .modalCuentaRegresiva .modal button:hover{
+.modalConfirmacion .modal button:hover,
+.modalCuentaRegresiva .modal button:hover {
     background: red;
 }
 
@@ -731,6 +727,13 @@ ul.misionesLanzadas li {
     #listaDestinos {
         padding: 10px 0;
     }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
 }
 
 body.mostrandoCarga::after {
