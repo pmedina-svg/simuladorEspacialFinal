@@ -16,19 +16,12 @@ function mostrarBienvenida() {
   } catch (e) {
     console.error("Error capturado por catch:", e);
     document.body.classList.remove("mostrandoCarga");
-  } finally {
-    console.log("Bienvenida Finalizada");
-    Toastify({
-        text: "Bienvenida Finalizada",
-        duration: 2000,
-        className: "info",
-    }).showToast();
   }
 }
 
 
 async function getViajesEspaciales() {
-
+    document.body.classList.add("mostrandoCarga");
     Toastify({
         text: "Cargando destinos",
         duration: 2000,
@@ -69,12 +62,7 @@ async function getViajesEspaciales() {
   }
 
   finally{
-    console.log("Carga finalizada");
-    Toastify({
-        text: "Carga finalizada",
-        duration: 2000,
-        className: "info",
-    }).showToast();
+    document.body.classList.remove("mostrandoCarga");
   }
 
 }
