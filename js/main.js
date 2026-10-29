@@ -307,6 +307,8 @@ function mostrarDestinos(destinos) {
         viaje.distancia / viaje.velocidad,
       );
 
+      document.querySelector("#configuracion").scrollIntoView();
+
       configuracion.innerHTML = `<h4>Destino Seleccionado: ${viaje.destino}</h4>
             <div class="info-destino">
                 <div class="col-destino">
