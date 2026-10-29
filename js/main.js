@@ -97,7 +97,8 @@ verSesion.addEventListener("click", function () {
   const cerrarSesion = modalSesion.querySelector("a");
   const modalConfirmacion = document.querySelector(".modalConfirmacion");
   modalConfirmacion.innerHTML = `<div class="modal">
-    <p>¿Estás seguro de que quieres cerrar sesión?</p>
+    <h3>¿Estás seguro de que quieres cerrar sesión?</h3>
+    <p>Al cerrar sesión se borrará el historial de misiones guardadas en este navegador. Si vuelves a ingresar con el mismo nombre, el historial no se recuperará.</p>
     <div class="modal-opciones">
     <button class="confirmarCierre">Sí</button>
     <button class="cancelarCierre">Cancelar</button>
